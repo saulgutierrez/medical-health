@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+.inicio {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    transition: 0.3s;
+}
+
+.inicio header .logo {
+    text-decoration: none;
+    color: #2469a0;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+/* Navbar */
+.inicio header .nav {
+    position: relative;
+    display: flex;
+}
+
+.inicio header .nav li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.inicio header .nav li a {
+    text-decoration: none;
+    color: #2469a0;
+    font-weight: 400;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 1em;
+}
+
+.inicio header .nav li a:hover {
+    background: #10bce3;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.inicio .contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inicio .contenido .texto {
+    position: relative;
+    max-width: 500px;
+    right: 370px;
+}
+
+.inicio .contenido .texto h2 {
+    font-size: 3em;
+    font-weight: 800;
+    color: #2469a0;
+    margin-bottom: 40px;
+}
+
+.inicio .contenido .texto h2 span {
+    color: #10bce3;
+}
+
+.boton {
+    text-decoration: none;
+    background: #2469a0;
+    color: #fff;
+    padding: 12px 25px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    transition: 0.3s;
+    width: 170px;
+    text-align: center;
+}
+
+.boton:hover {
+    background: #10bce3;
+}
+
+.inicio .contenido .imgBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 700px;
+    height: 100%;
+}
+
+.inicio .contenido .imgBox img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+/* Seccion Servicios */
+.servicios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.servicios .contenido {
+    max-width: 500px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.servicios .items {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 80px 20px 20px;
+    background: #e3f5ff;
+}
+
+.servicios .items .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    height: 270px;
+}
+
+.servicios .items .item .icono {
+    width: 100px;
+    height: 100px;
+    background: #d1f6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.servicios .items .item .icono ion-icon {
+    font-size: 2.5em;
+    color: #2469a0;
+}
+
+.servicios .items .item .texto {
+    text-align: center;
+    color: #2469a0;
+}
+
+.servicios .items .item .texto h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 2.5em;
+    font-weight: 800;
+    color: #2469a0;
+    margin-bottom: 40px;
+}
+
+.subtitulo span {
+    color: #10bce3;
+}
+
+.parrafo {
+    line-height: 1.5;
+    color: #2469a0;
+    margin-bottom: 30px;
+}
+
+.parrafo span {
+    color: #10bce3;
+}
+
+/* Seccion Sobre Nosotros */
+
+.sobre-nosotros {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 80px;
+}
+
+.sobre-nosotros .card-info {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobre-nosotros .card-info h3 {
+    color: #2469a0;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+.sobre-nosotros .card-info h3 span {
+    color: #10bce3;
+}
+
+.sobre-nosotros .card-info p {
+    color: #2469a0;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.sobre-nosotros .card-imagenes {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sobre-nosotros .card-imagenes .imgBox:nth-child(1) {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    left: 50px;
+}
+
+.sobre-nosotros .card-imagenes .imgBox:nth-child(2) {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    top: -50px;
+    right: 50px;
+}
+
+.sobre-nosotros .card-imagenes .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Seccion Blog */
+.blog {
+    padding: 80px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo {
+    text-align: center;
+    max-width: 550px;
+}
+
+.blog .titulo h3 {
+    font-size: 2.5em;
+    color: #10bce3;
+    margin-bottom: 15px;
+}
+
+.blog .titulo p {
+    font-size: 1em;
+    color: #2469a0;
+    margin-bottom: 50px;
+}
+
+.blog .cards {
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 0fr));
+    gap: 30px;
+}
+
+.blog .cards .card {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog .cards .card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.blog .cards .card .card-titulo {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    z-index: 10;
+    top: 30px;
+}
+
+.blog .cards .card .card-titulo h4 {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.blog .cards .card .card-titulo .btn-blog {
+    text-decoration: none;
+    color: #fff;
+    background: #2469a0;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+
+.blog .cards .card .card-titulo .btn-blog:hover {
+    background: #10bce3;
+}
+
+/* Seccion Contacto */
+.contacto {
+    padding: 100px 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacto .formulario {
+    position: relative;
+    width: 650px;
+    background: #e3f5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.contacto .formulario form .inputBox input[type="text"],
+.contacto .formulario form .inputBox input[type="email"],
+.contacto .formulario form .inputBox textarea {
+    border: 2px solid #2469a0;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #2469a0;
+    background: #d1f6ff;
+    font-size: 1em;
+    resize: none;
+}
+
+.contacto .formulario form input[type="submit"] {
+    border: none;
+    cursor: pointer;
+}
+
+.contacto .formulario form .inputBox input[type="text"]:focus,
+.contacto .formulario form .inputBox input[type="email"]:focus,
+.contacto .formulario form .inputBox textarea:focus {
+    outline: none;
+    background: #fff;
+}
+
+.contacto .contenido {
+    max-width: 500px;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 200px;
+}
+
+/* Footer */
+footer {
+    background: #2469a0;
+    padding: 100px 50px 30px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .enlaces {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .enlaces .box .logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+footer .enlaces .box h3 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+footer .enlaces .box ul {
+    list-style: none;
+}
+
+footer .enlaces .box ul li {
+    margin-bottom: 10px;
+}
+
+footer .enlaces .box ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .enlaces .box ul li a:hover {
+    color: #10bce3;
+}
+
+footer .enlaces .box .rrss {
+    display: flex;
+}
+
+footer .enlaces .box .rrss li {
+    margin-right: 15px;
+}
+
+footer .enlaces .box .rrss li a {
+    font-size: 1.5em;
+}
+
+footer .copyright {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer .copyright p {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Estilos Sticky Menu */
+.inicio header.sticky {
+    background: #2469a0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.inicio header.sticky .logo {
+    color: #fff;
+}
+
+.inicio header.sticky .nav li a {
+    color: #fff;
+}
+
+/* Breakpoints */
+
+/* -- Pantallas Largas -- */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* -- Laptops -- */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* -- Tablets -- */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* -- Celulares -- */
+@media only screen and (max-width: 600px) {
+
+}
