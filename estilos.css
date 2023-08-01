@@ -679,13 +679,111 @@ footer .copyright p {
         font-size: 1.5em;
         color: #fff;
     }
+
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('menu.png');
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        filter: invert(1);
+    }
+
+    .menuToggle.active {
+        background: url('close.png');
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .inicio .contenido {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inicio .contenido .imgBox {
+        width: 100%;
+        z-index: -1;
+        filter: brightness(50%);
+    }
+
+    .inicio .contenido .texto {
+        position: relative;
+        width: 500px;
+        right: 0px;
+    }
+
+    .inicio .contenido .texto h2 {
+        color: #fff;
+    }
+
+    .servicios {
+        flex-direction: column-reverse;
+    }
+
+    .servicios .contenido {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .servicios .items {
+        width: 100%;
+    }
+
+    .sobre-nosotros {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contacto {
+        flex-direction: column-reverse;
+    }
+
+    .contacto .contenido {
+        text-align: center;
+        margin-right: 60px;
+    }
+
+    footer .enlaces {
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    footer .enlaces .box {
+        margin-bottom: 25px;
+    }
 }
 
 /* -- Celulares -- */
 @media only screen and (max-width: 600px) {
-
+    .servicios .items {
+        padding: 20px;
+        margin: 40px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
+    .inicio .contenido .texto {
+        width: 80%;
+    }
+
+    .servicios .contenido {
+        padding-left: 0px;
+    }
+
+    .servicios .items {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+
+    .sobre-nosotros .card-info {
+        margin-left: 0px;
+    }
 
 }
