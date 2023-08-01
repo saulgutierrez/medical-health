@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -77,7 +77,7 @@ body {
 .inicio .contenido .texto {
     position: relative;
     max-width: 500px;
-    right: 370px;
+    right: 379px;
 }
 
 .inicio .contenido .texto h2 {
@@ -111,7 +111,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 700px;
+    width: 50%;
     height: 100%;
 }
 
@@ -133,15 +133,15 @@ body {
 }
 
 .servicios .contenido {
-    max-width: 500px;
     text-align: left;
-    margin-left: 100px;
+    max-width: 50%;
+    padding-left: 50px;
 }
 
 .servicios .items {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
     padding: 20px 80px 20px 20px;
     background: #e3f5ff;
@@ -270,7 +270,7 @@ body {
 
 /* Seccion Blog */
 .blog {
-    padding: 80px 100px;
+    padding: 100px 100px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -356,10 +356,11 @@ body {
 
 /* Seccion Contacto */
 .contacto {
-    padding: 100px 0px 100px;
+    padding: 100px 0px 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 0px;
 }
 
 .contacto .formulario {
@@ -490,20 +491,201 @@ footer .copyright p {
 
 /* -- Pantallas Largas -- */
 @media only screen and (max-width: 1200px) {
+    .inicio .contenido .texto {
+        font-size: 0.8em;
+        right: 250px;
+    }
 
+    .inicio .contenido .imgBox {
+        width: 50%;
+        height: 100%;
+    }
+    .sobre-nosotros .card-info {
+        margin-left: -100px;
+    }
+
+    .blog {
+        padding: 100px 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .blog .cards {
+        position: relative;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 0fr));
+        gap: 30px;
+    }
+    
+    .blog .cards .card {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .blog .cards .card img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        filter: brightness(50%);
+    }
+    
+    .blog .cards .card .card-titulo {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        padding: 20px;
+        z-index: 10;
+        top: 30px;
+    }
+    
+    .blog .cards .card .card-titulo h4 {
+        font-size: 1.2em;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    
+    .blog .cards .card .card-titulo .btn-blog {
+        text-decoration: none;
+        color: #fff;
+        background: #2469a0;
+        padding: 10px 25px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.4s;
+    }
+    
+    .blog .cards .card .card-titulo .btn-blog:hover {
+        background: #10bce3;
+    }
+
+    .contacto {
+        padding-bottom: 0px;
+    }
 }
 
 /* -- Laptops -- */
 @media only screen and (max-width: 992px) {
+    .inicio .contenido .texto {
+        right: 150px;
+        font-size: 0.7em;
+        width: 70%;
+    }
 
+    .servicios .items {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(60px, 1fr));
+        gap: 35px;
+        width: 50%;
+    }
+    
+    .servicios .items .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+        height: 100%;
+    }
+    
+    .servicios .items .item .icono {
+        width: 60px;
+        height: 60px;
+        background: #d1f6ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    
+    .servicios .items .item .icono ion-icon {
+        font-size: 2em;
+        color: #2469a0;
+    }
+    
+    .servicios .items .item .texto {
+        text-align: center;
+        color: #2469a0;
+        font-size: 0.8em;
+    }
+    
+    .servicios .items .item .texto h2 {
+        margin-bottom: 10px;
+    }
+
+    .servicios .contenido {
+        width: 50%;
+    }
+
+    .sobre-nosotros .card-imagenes .imgBox:nth-child(1) {
+        position: relative;
+        width: 300px;
+        height: 200px;
+    }
+    
+    .sobre-nosotros .card-imagenes .imgBox:nth-child(2) {
+        position: relative;
+        width: 300px;
+        height: 200px;
+    }
 }
 
 /* -- Tablets -- */
 @media only screen and (max-width: 767px) {
+    .inicio header {
+        padding: 30px 40px;
+    }
 
+    .inicio header .logo {
+        color: #fff;
+    }
+
+    .inicio header .nav {
+        display: none;
+    }
+
+    .inicio header .nav.active {
+        width: 100%;
+        height: calc(100% - 40px);
+        position: fixed;
+        top: 80px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #2469a0;
+    }
+
+    .inicio header .nav.active li {
+        padding: 20px;
+    }
+
+    .inicio header .nav.active li a {
+        font-size: 1.5em;
+        color: #fff;
+    }
 }
 
 /* -- Celulares -- */
 @media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (max-width: 400px) {
 
 }
