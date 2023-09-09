@@ -826,7 +826,7 @@ footer .copyright p {
     }
 
     .inicio .contenido .texto {
-        width: 100%;
+        width: 90%;
         max-width: 400px;
     }
 
@@ -849,7 +849,7 @@ footer .copyright p {
     }
 
     .servicios .items .item .texto {
-        width: 100%;
+        width: 90%;
         text-align: justify;
     }
 
@@ -897,7 +897,7 @@ footer .copyright p {
     }
 
     .blog .titulo p {
-        width: 100%;
+        width: 90%;
     }
 
     .blog .cards {
@@ -932,11 +932,12 @@ footer .copyright p {
     }
 
     .contacto .contenido {
-        width: 100%;
+        width: 90%;
     }
 
     .contacto .contenido .parrafo{
         text-align: justify;
+        width: 90%;
     }
 
     footer {
