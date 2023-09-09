@@ -797,8 +797,8 @@ footer .copyright p {
 /* -- Celulares -- */
 @media only screen and (max-width: 600px) {
     .inicio header .nav.active {
-        width: 70%;
-        height: calc(80% - 40px);
+        width: 100%;
+        height: calc(100% - 40px);
         position: fixed;
         top: 80px;
         left: 0;
@@ -810,7 +810,7 @@ footer .copyright p {
     }
 
     .inicio .contenido .texto {
-        width: 70%;
+        width: 90%;
     }
 
     .servicios .items {
@@ -821,17 +821,17 @@ footer .copyright p {
 
 @media only screen and (max-width: 400px) {
     .inicio {
-        width: 70%;
+        width: 100%;
         max-width: 400px;
     }
 
     .inicio .contenido .texto {
-        width: 70%;
-        max-width: 300px;
+        width: 90%;
+        max-width: 400px;
     }
 
     .servicios {
-        width: 70%;
+        width: 90%;
         max-width: 400px;
     }
 
@@ -840,8 +840,8 @@ footer .copyright p {
     }
 
     .servicios .items {
-        width: 70%;
-        max-width: 300px;
+        width: 90%;
+        max-width: 400px;
         grid-template-columns: repeat(1, minmax(0px, 1fr));
         padding-left: 0px;
         padding-right: 0px;
@@ -849,7 +849,7 @@ footer .copyright p {
     }
 
     .servicios .items .item .texto {
-        width: 70%;
+        width: 90%;
         text-align: justify;
     }
 
@@ -858,7 +858,7 @@ footer .copyright p {
     }
 
     .sobre-nosotros {
-        width: 70%;
+        width: 90%;
         max-width: 400px;
     }
 
@@ -867,7 +867,7 @@ footer .copyright p {
     }
 
     .sobre-nosotros .card-info p {
-        width: 70%;
+        width: 90%;
         max-width: 400px;
     }
 
@@ -893,16 +893,16 @@ footer .copyright p {
     }
 
     .blog h3 {
-        width: 70%;
+        width: 90%;
     }
 
     .blog .titulo p {
-        width: 70%;
+        width: 90%;
     }
 
     .blog .cards {
         position: relative;
-        width: 70%;
+        width: 90%;
         max-width: 400px;
         display: grid;
         place-content: center;
@@ -914,7 +914,7 @@ footer .copyright p {
 
     .blog .cards .card {
         position: relative;
-        width: 70%;
+        width: 90%;
         height: 300px;
         display: flex;
         justify-content: center;
@@ -923,16 +923,16 @@ footer .copyright p {
     }
 
     .contacto {
-        width: 70%;
+        width: 90%;
     }
 
     .contacto .formulario {
-        width: 70%;
+        width: 90%;
         max-width: 400px;
     }
 
     .contacto .contenido {
-        width: 70%;
+        width: 90%;
     }
 
     .contacto .contenido .parrafo{
@@ -940,7 +940,7 @@ footer .copyright p {
     }
 
     footer {
-        width: 70%;
+        width: 90%;
         padding-right: 0px;
     }
 }
