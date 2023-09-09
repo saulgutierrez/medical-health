@@ -739,6 +739,15 @@ footer .copyright p {
         align-items: center;
         flex-direction: column;
         gap: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .sobre-nosotros .card-info {
+        text-align: justify;
+        width: 80%;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .contacto {
@@ -748,6 +757,30 @@ footer .copyright p {
     .contacto .contenido {
         text-align: center;
         margin-right: 60px;
+    }
+
+    .contacto .formulario {
+        position: relative;
+        width: 80%;
+        background: #e3f5ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+    }
+    
+    .contacto .formulario form .inputBox input[type="text"],
+    .contacto .formulario form .inputBox input[type="email"],
+    .contacto .formulario form .inputBox textarea {
+        border: 2px solid #2469a0;
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 10px;
+        color: #2469a0;
+        background: #d1f6ff;
+        font-size: 1em;
+        resize: none;
     }
 
     footer .enlaces {
@@ -763,6 +796,23 @@ footer .copyright p {
 
 /* -- Celulares -- */
 @media only screen and (max-width: 600px) {
+    .inicio header .nav.active {
+        width: 70%;
+        height: calc(80% - 40px);
+        position: fixed;
+        top: 80px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #2469a0;
+    }
+
+    .inicio .contenido .texto {
+        width: 70%;
+    }
+
     .servicios .items {
         padding: 20px;
         margin: 40px;
@@ -770,8 +820,19 @@ footer .copyright p {
 }
 
 @media only screen and (max-width: 400px) {
+    .inicio {
+        width: 70%;
+        max-width: 400px;
+    }
+
     .inicio .contenido .texto {
-        width: 80%;
+        width: 70%;
+        max-width: 300px;
+    }
+
+    .servicios {
+        width: 70%;
+        max-width: 400px;
     }
 
     .servicios .contenido {
@@ -779,11 +840,107 @@ footer .copyright p {
     }
 
     .servicios .items {
-        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        width: 70%;
+        max-width: 300px;
+        grid-template-columns: repeat(1, minmax(0px, 1fr));
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0px;
+    }
+
+    .servicios .items .item .texto {
+        width: 70%;
+        text-align: justify;
+    }
+
+    .servicios .items .item .texto h2 {
+        text-align: center;
+    }
+
+    .sobre-nosotros {
+        width: 70%;
+        max-width: 400px;
     }
 
     .sobre-nosotros .card-info {
         margin-left: 0px;
     }
 
+    .sobre-nosotros .card-info p {
+        width: 70%;
+        max-width: 400px;
+    }
+
+    .sobre-nosotros .card-imagenes .imgBox:nth-child(1) {
+        position: relative;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 150px;
+        height: 100px;
+    }
+    
+    .sobre-nosotros .card-imagenes .imgBox:nth-child(2) {
+        position: relative;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 150px;
+        height: 100px;
+    }
+
+    .blog {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .blog h3 {
+        width: 70%;
+    }
+
+    .blog .titulo p {
+        width: 70%;
+    }
+
+    .blog .cards {
+        position: relative;
+        width: 70%;
+        max-width: 400px;
+        display: grid;
+        place-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 0fr));
+        gap: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .blog .cards .card {
+        position: relative;
+        width: 70%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contacto {
+        width: 70%;
+    }
+
+    .contacto .formulario {
+        width: 70%;
+        max-width: 400px;
+    }
+
+    .contacto .contenido {
+        width: 70%;
+    }
+
+    .contacto .contenido .parrafo{
+        text-align: justify;
+    }
+
+    footer {
+        width: 70%;
+        padding-right: 0px;
+    }
 }
