@@ -8,3 +8,5 @@ Technologies used:
 <li>Vanilla JS</li>
 <li>Ionic Icons</li>
 <li>Google Fonts</li>
+
+![image](https://github.com/saulgutierrez/medical-health/assets/62368834/3bfc79cb-f9a4-4d5e-ab25-c8c777786b28)
